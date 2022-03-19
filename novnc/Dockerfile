@@ -5,7 +5,7 @@ RUN git clone --depth 1 https://github.com/novnc/noVNC.git /opt/noVNC && \
     git clone --depth 1 https://github.com/novnc/websockify /opt/noVNC/utils/websockify && \
     rm -rf /opt/noVNC/.git /opt/noVNC/utils/websockify/.git
 
-FROM alpine:3.12.0
+FROM alpine:3.14
 
 ENV REMOTE_HOST localhost
 ENV REMOTE_PORT 5900
